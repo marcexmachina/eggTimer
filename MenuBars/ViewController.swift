@@ -49,6 +49,8 @@ class ViewController: UIViewController {
         if currentTime > 0 {
             let newTime = currentTime - 1
             timerLabel.text = String(newTime)
+        } else {
+            timer?.invalidate()
         }
     }
     
